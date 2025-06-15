@@ -1,0 +1,227 @@
+/* Body Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #63b0f8, #a1a8e2); 
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+
+h1 {
+    color: #333333;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+/* Form Styling */
+#guestForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin-bottom: 25px;
+}
+
+#guestName,
+#guestCategory {
+    padding: 12px;
+    border: 2px solid #a19e9e;
+    border-radius: 8px;
+    font-size: 1em;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+#guestName:focus,
+#guestCategory:focus {
+    outline: none;
+    border-color: #b5aee2; 
+
+}
+
+#guestForm button[type="submit"] {
+    background-color: #1d83f8; 
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+#guestForm button[type="submit"]:hover {
+    background-color: #006be6;
+   
+}
+
+/* Guest List Info */
+.guest-list-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #555555;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 20px;
+}
+
+
+#guestList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+/* Individual Guests List Styling */
+
+#guestList li {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    text-align: left; 
+}
+
+/* Guest Details Section (Name, Category, RSVP, Timestamp) */
+
+.guest-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+    margin-bottom: 10px; 
+}
+
+
+.guest-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px; 
+}
+
+/* Category Tag Styling */
+
+.category-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 15px; 
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-top: 5px; 
+    white-space: nowrap; 
+}
+
+/* Specific Category Colors */
+
+.category-Friend {
+    background-color: #b3e0ff; 
+    color: #0056b3; 
+}
+
+.category-Family {
+    background-color: #ffb3b3; 
+    color: #b30000; 
+}
+
+.category-Teacher {
+    background-color: #b3ffb3; 
+    color: #007f00; 
+}
+
+.category-Other {
+    background-color: #e0b3ff; 
+    color: #6a00b3; 
+}
+
+/* RSVP Status */
+.rsvp-status {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.attending {
+    color: #28a745; 
+    font-weight: bold;
+}
+
+.not-attending {
+    color: #dc3545; 
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+/* Timestamp Styling */
+.timestamp {
+    font-size: 0.75em;
+    color: #777777;
+    margin-top: 5px;
+}
+
+/* Button Container for List Items */
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 8px; 
+    margin-top: 15px; 
+}
+
+
+/* Buttons in List Items */
+
+#guestList li button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    white-space: nowrap; /
+}
+
+#guestList li button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.toggle-rsvp-btn {
+    background-color: #ffc107; 
+    color: #333;
+}
+
+.toggle-rsvp-btn:hover {
+    background-color: #e0a800;
+}
+
+.remove-btn {
+    background-color: #dc3545; 
+    color: white;
+}
+
+.remove-btn:hover {
+    background-color: #a71d2a;
+}
+

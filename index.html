@@ -8,6 +8,42 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <div>
+        <h1>Graduation Event List</h1>
+
+        <!-- Form to Add Guests -->
+        <form id="guestForm">
+
+            <input type="text"  id="guestName" placeholder="Guest Name" >  </input>
+             
+            <select id="guestCategory">
+                <option value="Friend">Friend</option>
+                <option value="Family">Family</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Other">Other</option>
+            </select>
+
+
+            <button type="submit" >
+                Add Guest
+            </button>
+        </form>
+
+        <!-- Guest List Container -->
+         
+        <div class="guest-list-info">
+            <div>
+                <span>Guest Count: <span id="guestCount">0</span>/10</span>
+                <span>Attending: <span id="attendingCount">0</span></span>
+            </div>
+            <ul id="guestList" class="space-y-3">
+                <!-- Guest items will be adding here because of JS functionality--> 
+
+            </ul>
+        </div>
+    </div>
+
+   
     
 </body>
 </html>
