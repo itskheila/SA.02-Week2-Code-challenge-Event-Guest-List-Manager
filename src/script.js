@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const guestCount = document.getElementById('guestCount');
     const attendingCount = document.getElementById('attendingCount');
     let guests = [];
+    
 
     form.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Please enter a guest name.');
             return;
         }
+        
         const guest = {
             name,
             category,
